@@ -1,0 +1,6 @@
+{
+  "name": "Online Store",
+  "description": "Full-stack online shop with user registration, authentication, order management, and a persistent database backend running Express.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
