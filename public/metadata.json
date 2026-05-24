@@ -1,0 +1,6 @@
+{
+  "name": "Tactical Map Editor",
+  "description": "Tactical map editor using Leaflet and Geoman. Create multi-layered defense lines, custom tactical polygons, and highly customizable squad icons with custom colors, symbols, labels, and sizes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

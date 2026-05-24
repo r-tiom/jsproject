@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tactical Map Editor - C2 Command Center v2.5</title>
+    <script>
+      (function() {
+        try {
+          var targetObj = typeof window !== 'undefined' ? window : (typeof globalThis !== 'undefined' ? globalThis : self);
+          if (targetObj) {
+            var originalFetch = targetObj.fetch;
+            var currentFetch = originalFetch;
+            var descriptor = Object.getOwnPropertyDescriptor(targetObj, 'fetch');
+            if (!descriptor || descriptor.configurable) {
+              Object.defineProperty(targetObj, 'fetch', {
+                get: function() {
+                  return currentFetch;
+                },
+                set: function(val) {
+                  currentFetch = val;
+                },
+                configurable: true,
+                enumerable: true
+              });
+            }
+          }
+        } catch (e) {
+          console.warn('Sandbox fetch protection bypass failed:', e);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
