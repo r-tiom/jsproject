@@ -1,0 +1,6 @@
+{
+  "name": "R-Tiom Production",
+  "description": "Premium beat catalog and licensing storefront for R-Tiom Production, featuring user authorization, shopping cart for purchase, and admin panel for beat management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
